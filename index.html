@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="index.html" class="logo">Christophe Viau: Portfolio</a>
+        <div class="nav-links">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <div class="profile-section">
+        <div class="profile-container">
+          <svg id="blob-container" width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" filter="url(#blob-filter)">
+            <defs>
+              <filter id="blob-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="30" color-interpolation-filters="sRGB" result="blur" />
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix" 
+                  values="1 0 0 0 0
+                          0 1 0 0 0 
+                          0 0 1 0 0 
+                          0 0 0 40 -20"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div class="profile-content">
+            <img src="img/profile.jpeg" alt="Profile Photo" class="profile-photo">
+            <h2>UX Design, Dataviz and AI.</h2>
+            <p>I'm a UX designer and developer with a passion for data. I invite you to look at some projects I worked on, ranging from interactive dashboards to machine learning interfaces.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header text-center">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-subtitle">A selection of my recent work</p>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <!-- Project cards will be inserted here by JavaScript -->
+      </div>
+
+      <div class="cta-container">
+        <a href="contact.html" class="button">Get in touch</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Project Card Template -->
+  <script id="project-card-template" type="x-tmpl-mustache">
+    <a href="project-template.html?id={{id}}" class="project-card">
+      <div class="project-card-inner">
+        <div class="project-card-front">
+          <div class="project-image-container">
+            <img src="{{thumbnail}}" alt="{{title}}" class="project-image">
+          </div>
+          <!-- <div class="project-info">
+            <h2 class="project-title">{{title}}</h2>
+            <p class="project-description">{{description}}</p>
+          </div> -->
+        </div>
+        <div class="project-card-back">
+          <h3 class="project-title">{{title}}</h3>
+          <p class="project-description">{{description}}</p>
+          <span class="view-project">View Project →</span>
+        </div>
+      </div>
+    </a>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+  <script src="projects.js"></script>
+  <script src="blob.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

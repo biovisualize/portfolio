@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project | Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-content">
+        <a href="index.html" class="logo">Christophe Viau: Portfolio</a>
+        <div class="nav-links">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <a href="index.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6"/>
+        </svg>
+        Back to projects
+      </a>
+      
+      <div id="project-sections">
+        <!-- Project sections will be inserted here by JavaScript -->
+      </div>
+        
+      <div class="project-hero-card">
+        <div class="project-hero-content">
+          <h1 class="project-title">Christophe Viau</h1>
+          <p class="project-description" id="project-description">Project description will be loaded here.</p>
+        </div>
+      </div>
+      
+      <div class="cta-container">
+        <a href="contact.html" class="button">Get in touch</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Templates -->
+  <script id="project-header-template" type="x-tmpl-mustache">
+    <h1 class="project-title">{{title}}</h1>
+    <p class="project-description">{{description}}</p>
+  </script>
+
+  <script id="single-image-template" type="x-tmpl-mustache">
+    <div class="image-grid">
+      <div class="image-container">
+        <img src="{{src}}" alt="{{alt}}" class="project-image">
+        <div class="image-caption">{{caption}}</div>
+        <div class="image-description">{{description}}</div>
+      </div>
+    </div>
+  </script>
+
+  <script id="trio-image-template" type="x-tmpl-mustache">
+    <div class="image-grid">
+      {{#images}}
+      <div class="image-container">
+        <img src="{{src}}" alt="{{alt}}" class="project-image">
+        <div class="image-caption">{{caption}}</div>
+        <div class="image-description">{{description}}</div>
+      </div>
+      {{/images}}
+    </div>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+  <script src="projects.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get project ID from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectId = urlParams.get('id');
+      
+      if (!projectId) {
+        window.location.href = 'index.html';
+        return;
+      }
+      
+      // Find project by ID
+      const project = window.projects.find(p => p.id === projectId);
+      
+      if (!project) {
+        window.location.href = 'index.html';
+        return;
+      }
+      
+      // Update page title
+      document.title = `${project.title} | Design Portfolio`;
+      
+      // Update project hero content
+      const projectHeroContent = document.querySelector('.project-hero-content');
+      const headerTemplate = document.getElementById('project-header-template').innerHTML;
+      projectHeroContent.innerHTML = Mustache.render(headerTemplate, {
+        ...project
+      });
+      
+      // Render project sections
+      const sectionsContainer = document.getElementById('project-sections');
+      const singleImageTemplate = document.getElementById('single-image-template').innerHTML;
+      const trioImageTemplate = document.getElementById('trio-image-template').innerHTML;
+      
+      project.sections.forEach((section, sectionIndex) => {
+        if (section.type === 'single') {
+          sectionsContainer.innerHTML += Mustache.render(singleImageTemplate, {
+            src: section.images[0],
+            alt: `Project image ${sectionIndex + 1}`,
+            caption: section.caption,
+            description: section.description
+          });
+        } else if (section.type === 'trio') {
+          sectionsContainer.innerHTML += Mustache.render(trioImageTemplate, {
+            images: section.images.map((image, index) => ({
+              src: image,
+              alt: `Project image ${sectionIndex + 1}-${index + 1}`,
+              caption: section.captions[index],
+              description: section.descriptions[index]
+            }))
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
