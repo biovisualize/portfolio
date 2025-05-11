@@ -77,6 +77,11 @@ a {
 .logo {
   font-size: 18px;
   font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: var(--color-primary);
 }
 
 .nav-links {
@@ -86,12 +91,18 @@ a {
 
 .nav-link {
   color: var(--color-text-light);
-  transition: color 0.2s;
+  transition: all 0.2s ease;
   font-size: 14px;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  color: white;
 }
 
 .nav-link:hover {
-  color: var(--color-text);
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Profile Section */
@@ -164,6 +175,7 @@ a {
 .main {
   min-height: calc(100vh - 56px);
   padding: var(--spacing-4);
+  margin-bottom: var(--spacing-16);
 }
 
 /* Page header */
@@ -305,18 +317,20 @@ a {
 .button {
   display: inline-block;
   padding: var(--spacing-2) var(--spacing-4);
-  background-color: var(--color-text);
+  background-color: var(--color-primary);
   color: var(--color-white);
   font-weight: 500;
   border-radius: var(--border-radius);
-  transition: background-color 0.2s;
+  transition: all 0.2s ease;
   cursor: pointer;
   border: none;
   font-size: 13px;
 }
 
 .button:hover {
-  background-color: #0f172a;
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .button-full {
@@ -378,7 +392,6 @@ a {
   line-height: 1.6;
   color: #333;
   max-width: 800px;
-  margin: 0 auto;
 }
 
 /* Image grid styles */
@@ -440,7 +453,7 @@ a {
 
 /* Project Template Styles */
 .project-hero-card {
-  background: white;
+  background: #ccc;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;

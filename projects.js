@@ -4,6 +4,7 @@ window.projects = [
     id: 'heavyai-immerse',
     title: 'Heavy.AI Immerse',
     description: 'Dashboards on GPU database',
+    information: 'I worked at Heavy.AI (previously MapD/Omnisci) for 5 years. That\'s when I transitioned from frontend engineering to being a full time UX designer. Heavy.AI Immerse is a dashboarding system to interact with very large datasets (billions of data points) in real time and accelerate A.I. algorithms using a clever GPU database.',
     thumbnail: 'img/heavyai_immerse_thumb.jpg',
     sections: [
       {
@@ -102,6 +103,7 @@ window.projects = [
     id: 'planetos-powerboard',
     title: 'PlanetOS Powerboard',
     description: 'Wind farm operational dashboards',
+    information: 'At PlanetOS (now part of Intertrust) I was a Data visualization, design system and frontend engineer. PlanetOS Powerboard was an application of their environmental data aggregation platform to the IoT and particularly the wind farm industry.',
     thumbnail: 'img/planetos_powerboard_thumb.jpg',
     sections: [
       {
@@ -136,6 +138,7 @@ window.projects = [
     id: 'planetos-dataviz',
     title: 'PlanetOS Data Visualization',
     description: 'Interactive visualization system',
+    information: 'At PlanetOS (now part of Intertrust) I was a Data visualization, design system and frontend engineer. I learned geospatial visualization and developed custom maps for special environmental data needs. This dataviz system was used for all products and custom interactive reports.',
     thumbnail: 'img/planetos_dataviz_thumb.jpg',
     sections: [
       {
@@ -184,6 +187,7 @@ window.projects = [
     id: 'planetos-datahub',
     title: 'PlanetOS Datahub',
     description: 'Environmental data platform',
+    information: 'At PlanetOS (now part of Intertrust) I was a Data visualization, design system and frontend engineer. PlanetOS Datahub was an aggregation platform for environmental data. It was ingesting and indexing large datasets to serve them under a convenient API.',
     thumbnail: 'img/planetos_datahub_thumb.jpg',
     sections: [
       {
@@ -212,12 +216,12 @@ window.projects = [
         descriptions: []
       }
     ]
-  }
-  ,
+  },
   {
     id: 'heavyai-design-system',
     title: 'Heavy.AI Design System',
     description: 'Charts, UI, UX patterns',
+    information: 'I worked at Heavy.AI (previously MapD/Omnisci) for 5 years. That\'s when I transitioned from frontend engineering to being a full time UX designer. In both roles I was in charge of the design and charting system that all the apps were based on.',
     thumbnail: 'img/heavyai_ds_thumb.jpg',
     sections: [
       {
@@ -292,6 +296,63 @@ window.projects = [
           'First version to show on giant display'
         ]
       }
+    ]
+  },
+  {
+    id: 'datameer',
+    title: 'Datameer Business Infographics',
+    description: 'Big Data dashboarding on Hadoop',
+    information: 'I moved from Montreal to San Francisco to work at Datameer after I finished my PhD in 2012. Datameer is a data transformation tool for Big Data, originally built on top of Hadoop. Our project was to build a freeform "Business Infographics Designer" for Big Data.',
+    thumbnail: 'img/datameer_thumb.jpg',
+    sections: [
+      {
+        type: 'single',
+        images: ['img/datameer_big.jpg'],
+        caption: 'Chart designer',
+        description: 'Data selector to build charts'
+      },
+      {
+        type: 'trio',
+        images: [
+          'img/datameer_app.jpg',
+          'img/datameer_editor.jpg',
+          'img/datameer_ecosystem.jpg'
+        ],
+        captions: [
+          'Datameer app',
+          'Editor panels',
+          'Big data ecosystem visualization'
+        ],
+        descriptions: [
+          'Datameer business infographics',
+          'Freeform editor controls',
+          'Products working on Hadoop'
+        ]
+      },
+      {
+        type: 'single',
+        images: ['img/datameer_designer_big.jpg'],
+        caption: 'Datameer Business Infographics Designer',
+        description: 'Freeform editor' 
+      },
+      {
+        type: 'trio',
+        images: [
+          'img/datameer_dashboard1.jpg',
+          'img/datameer_dashboard2.jpg',
+          'img/datameer_dashboard3.jpg'
+        ],
+        captions: [
+          'Twitter app',
+          'Twitter happiness',
+          'Click path analysis'
+        ],
+        descriptions: [
+          'Social network visualization',
+          'Sentiment analysis',
+          'Website monitoring'
+        ]
+      },
     ]
   }
 ];
