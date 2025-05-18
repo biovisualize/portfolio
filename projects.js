@@ -1,6 +1,81 @@
 // Project data
 window.projects = [
   {
+    id: 'medable-ds',
+    title: 'Medable Design System',
+    description: 'Components for Reporting and eCOA',
+    information: 'At Medable, I design products for collecting and visualizing data in clinical trials. I designed and prototyped various component systems to build these products faster in a consistent and accesible way.',
+    thumbnail: 'img/medable_ds_translation.jpg',
+    sections: [
+      {
+        type: 'single',
+        images: ['img/medable_ds_translation.jpg'],
+        caption: 'Translation report',
+        description: 'Study and eCOA translation UX with inline report'
+      },
+      {
+        type: 'trio',
+        images: [
+          'img/medable_ds_ecoa.jpg',
+          'img/medable_ds_charts.jpg',
+          'img/medable_ds_sb2.jpg'
+        ],
+        captions: [
+          'eCOA system',
+          'Chart system',
+          'Components code'
+        ],
+        descriptions: [
+          'eCOA mobile component system and screen types',
+          'Chart and report design system',
+          'Chart and report code components'
+        ]
+      },
+      {
+        type: 'single',
+        images: ['img/medable_ds_os_tree.jpg'],
+        caption: 'UX research',
+        description: 'Example of Opportunity and Solution Tree'
+      },
+      {
+        type: 'trio',
+        images: [
+          'img/medable_ds_ex1.jpg',
+          'img/medable_ds_ex2.jpg',
+          'img/medable_ds_sb1.jpg'
+        ],
+        captions: [
+          'Example 1',
+          'Example 2',
+          'Code example'
+        ],
+        descriptions: [
+          'Study archival report',
+          'Site dashboard',
+          'Site dashboard example in code'
+        ]
+      },
+      {
+        type: 'trio',
+        images: [
+          'img/medable_ds_library.jpg',
+          'img/medable_ds_details_section.jpg',
+          'img/medable_ds_screen_section.jpg'
+        ],
+        captions: [
+          'Medable eCOA library',
+          'eCOA details',
+          'eCOA builder'
+        ],
+        descriptions: [
+          'Library of eCOA activities',
+          'Details section',
+          'Visual builder for complex eCOA'
+        ]
+      },
+    ]
+  },
+  {
     id: 'heavyai-immerse',
     title: 'Heavy.AI Immerse',
     description: 'Dashboards on GPU database',
