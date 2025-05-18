@@ -4,75 +4,85 @@ window.projects = [
     id: 'medable-ds',
     title: 'Medable Design System',
     description: 'Components for Reporting and eCOA',
-    information: 'At Medable, I design products for collecting and visualizing data in clinical trials. I designed and prototyped various component systems to build these products faster in a consistent and accesible way.',
+    information: 'At Medable, I design products for collecting and visualizing data in clinical trials. While working on multiple apps for more than 3 years, I designed and prototyped various component systems to build these products faster in a consistent and accesible way.',
     thumbnail: 'img/medable_ds_translation.jpg',
     sections: [
       {
         type: 'single',
-        images: ['img/medable_ds_translation.jpg'],
-        caption: 'Translation report',
-        description: 'Study and eCOA translation UX with inline report'
+        images: [{
+          image: 'img/medable_ds_translation.jpg',
+          caption: 'Translation report',
+          description: 'Study and eCOA translation UX with inline report'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/medable_ds_ecoa.jpg',
-          'img/medable_ds_charts.jpg',
-          'img/medable_ds_sb2.jpg'
-        ],
-        captions: [
-          'eCOA system',
-          'Chart system',
-          'Components code'
-        ],
-        descriptions: [
-          'eCOA mobile component system and screen types',
-          'Chart and report design system',
-          'Chart and report code components'
+          {
+            image: 'img/medable_ds_ecoa.jpg',
+            caption: 'eCOA system',
+            description: 'eCOA mobile component system and screen types'
+          },
+          {
+            image: 'img/medable_ds_charts.jpg',
+            caption: 'Chart system',
+            description: 'Chart and report design system'
+          },
+          {
+            image: 'img/medable_ds_sb2.jpg',
+            caption: 'Components code',
+            description: 'Chart and report code components'
+          }
         ]
       },
       {
         type: 'single',
-        images: ['img/medable_ds_os_tree.jpg'],
-        caption: 'UX research',
-        description: 'Example of Opportunity and Solution Tree'
+        images: [{
+          image: 'img/medable_ds_os_tree.jpg',
+          caption: 'UX research',
+          description: 'Example of Opportunity and Solution Tree'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/medable_ds_ex1.jpg',
-          'img/medable_ds_ex2.jpg',
-          'img/medable_ds_sb1.jpg'
-        ],
-        captions: [
-          'Example 1',
-          'Example 2',
-          'Code example'
-        ],
-        descriptions: [
-          'Study archival report',
-          'Site dashboard',
-          'Site dashboard example in code'
+          {
+            image: 'img/medable_ds_ex1.jpg',
+            caption: 'Example 1',
+            description: 'Study archival report'
+          },
+          {
+            image: 'img/medable_ds_ex2.jpg',
+            caption: 'Example 2',
+            description: 'Site dashboard'
+          },
+          {
+            image: 'img/medable_ds_sb1.jpg',
+            caption: 'Code example',
+            description: 'Site dashboard example in code'
+          }
         ]
       },
       {
         type: 'trio',
         images: [
-          'img/medable_ds_library.jpg',
-          'img/medable_ds_details_section.jpg',
-          'img/medable_ds_screen_section.jpg'
-        ],
-        captions: [
-          'Medable eCOA library',
-          'eCOA details',
-          'eCOA builder'
-        ],
-        descriptions: [
-          'Library of eCOA activities',
-          'Details section',
-          'Visual builder for complex eCOA'
+          {
+            image: 'img/medable_ds_library.jpg',
+            caption: 'Medable eCOA library',
+            description: 'Library of eCOA activities'
+          },
+          {
+            image: 'img/medable_ds_details_section.jpg',
+            caption: 'eCOA details',
+            description: 'Details section'
+          },
+          {
+            image: 'img/medable_ds_screen_section.jpg',
+            caption: 'eCOA builder',
+            description: 'Visual builder for complex eCOA'
+          }
         ]
-      },
+      }
     ]
   },
   {
@@ -84,94 +94,108 @@ window.projects = [
     sections: [
       {
         type: 'single',
-        images: ['img/immerse_hero.jpg'],
-        caption: 'Immerse dashboard',
-        description: 'Cell tower signal visualization'
+        images: [{
+          image: 'img/immerse_hero.jpg',
+          caption: 'Immerse dashboard',
+          description: 'Cell tower signal visualization'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/immerse_example1.jpg',
-          'img/immerse_example2.jpg',
-          'img/immerse_example3.jpg'
-        ],
-        captions: [
-          'US census',
-          'US flights',
-          'Bridges'
-        ],
-        descriptions: [
-          '1 billion data points',
-          '200 million flights with delay',
-          'Criticality assessment'
+          {
+            image: 'img/immerse_example1.jpg',
+            caption: 'US census',
+            description: '1 billion data points'
+          },
+          {
+            image: 'img/immerse_example2.jpg',
+            caption: 'US flights',
+            description: '200 million flights with delay'
+          },
+          {
+            image: 'img/immerse_example3.jpg',
+            caption: 'Bridges',
+            description: 'Criticality assessment'
+          }
         ]
       },
       {
         type: 'trio',
         images: [
-          'img/immerse_example4.jpg',
-          'img/immerse_example5.jpg',
-          'img/immerse_example6.jpg'
-        ],
-        captions: [
-          'US census',
-          'US census',
-          'US census'
-        ],
-        descriptions: [
-          'Historical redlining',
-          'Redistricting and gerrymandering',
-          '300 people per dot'
-        ]
-      },
-      {
-        type: 'single',
-        images: ['img/immerse_big1.jpg'],
-        caption: 'NYC taxi tipping trends',
-        description: '1 billion taxi runs'
-      },
-      {
-        type: 'trio',
-        images: [
-          'img/immerse_3d1.jpg',
-          'img/immerse_3d2.jpg',
-          'img/immerse_3d3.jpg'
-        ],
-        captions: [
-          '3D prototype',
-          '3D wells',
-          '3D terrain'
-        ],
-        descriptions: [
-          'First iteration of 3D chart',
-          'Well bore points',
-          'Terrain test'
+          {
+            image: 'img/immerse_example4.jpg',
+            caption: 'US census',
+            description: 'Historical redlining'
+          },
+          {
+            image: 'img/immerse_example5.jpg',
+            caption: 'US census',
+            description: 'Redistricting and gerrymandering'
+          },
+          {
+            image: 'img/immerse_example6.jpg',
+            caption: 'US census',
+            description: '300 people per dot'
+          }
         ]
       },
       {
         type: 'single',
-        images: ['img/immerse_big2.jpg'],
-        caption: '3D buildings',
-        description: 'San Francisco LIDAR data'
+        images: [{
+          image: 'img/immerse_big1.jpg',
+          caption: 'NYC taxi tipping trends',
+          description: '1 billion taxi runs'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/immerse_example7.jpg',
-          'img/immerse_example8.jpg',
-          'img/immerse_example9.jpg'
-        ],
-        captions: [
-          'Buildings',
-          'Wildfire',
-          'US ship movement'
-        ],
-        descriptions: [
-          'California buildings dashboard',
-          'Wildfire impact and risk',
-          'Time of transmission by ship type and length'
+          {
+            image: 'img/immerse_3d1.jpg',
+            caption: '3D prototype',
+            description: 'First iteration of 3D chart'
+          },
+          {
+            image: 'img/immerse_3d2.jpg',
+            caption: '3D wells',
+            description: 'Well bore points'
+          },
+          {
+            image: 'img/immerse_3d3.jpg',
+            caption: '3D terrain',
+            description: 'Terrain test'
+          }
         ]
       },
+      {
+        type: 'single',
+        images: [{
+          image: 'img/immerse_big2.jpg',
+          caption: '3D buildings',
+          description: 'San Francisco LIDAR data'
+        }]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/immerse_example7.jpg',
+            caption: 'Buildings',
+            description: 'California buildings dashboard'
+          },
+          {
+            image: 'img/immerse_example8.jpg',
+            caption: 'Wildfire',
+            description: 'Wildfire impact and risk'
+          },
+          {
+            image: 'img/immerse_example9.jpg',
+            caption: 'US ship movement',
+            description: 'Time of transmission by ship type and length'
+          }
+        ]
+      }
     ]
   },
   {
@@ -183,29 +207,39 @@ window.projects = [
     sections: [
       {
         type: 'single',
-        images: ['img/powerboard_hero.jpg'],
-        caption: 'Main operational dashboard',
-        description: ''
+        images: [{
+          image: 'img/powerboard_hero.jpg',
+          caption: 'Powerboard examples',
+          description: 'Main operational dashboard for wind farm monitoring'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/powerboard_windfarm.jpg',
-          'img/powerboard_forecast.jpg',
-          'img/powerboard_ds.jpg'
-        ],
-        captions: [
-          'Wind farm performance overview',
-          'Weather forecast integration',
-          'Data science analysis view'
-        ],
-        descriptions: []
+          {
+            image: 'img/powerboard_windfarm.jpg',
+            caption: 'Wind farm performance overview',
+            description: 'Map of wind farms in the U.S. with wind currents'
+          },
+          {
+            image: 'img/powerboard_forecast.jpg',
+            caption: 'Weather forecast integration',
+            description: 'Planning production using wind forecast'
+          },
+          {
+            image: 'img/powerboard_ds.jpg',
+            caption: 'Design system',
+            description: 'Components for building dashboards'
+          }
+        ]
       },
       {
         type: 'single',
-        images: ['img/powerboard_big.jpg'],
-        caption: 'Full operational view',
-        descriptions: []
+        images: [{
+          image: 'img/powerboard_big.jpg',
+          caption: 'Full operational view',
+          description: 'Main dashboard for the biggest offshore wind farm in the world'
+        }]
       }
     ]
   },
@@ -218,43 +252,59 @@ window.projects = [
     sections: [
       {
         type: 'single',
-        images: ['img/dataviz_hero.jpg'],
-        caption: 'Main visualization interface',
-        description: ''
+        images: [{
+          image: 'img/dataviz_hero.jpg',
+          caption: 'Ocean acidification',
+          description: 'Global ocean change of PH level and impact on marine life'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/dataviz_gdp1.jpg',
-          'img/dataviz_gdp2.jpg',
-          'img/dataviz_gdp3.jpg'
-        ],
-        captions: [
-          'GDP data visualization',
-          'Economic indicators view',
-          'Interactive data exploration'
-        ],
-        descriptions: []
+          {
+            image: 'img/dataviz_gdp1.jpg',
+            caption: 'Correlating GDP and forest cover',
+            description: 'Iteration 1'
+          },
+          {
+            image: 'img/dataviz_gdp2.jpg',
+            caption: 'Correlating GDP and forest cover',
+            description: 'Iteration 2'
+          },
+          {
+            image: 'img/dataviz_gdp3.jpg',
+            caption: 'Correlating GDP and forest cover',
+            description: 'Iteration 3'
+          }
+        ]
       },
       {
         type: 'single',
-        images: ['img/dataviz_big.jpg'],
-        caption: 'Full-screen data view',
-        description: ''
+        images: [{
+          image: 'img/dataviz_big.jpg',
+          caption: 'California draught',
+          description: 'Draught history impacting food production'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/dataviz_special.jpg',
-          'img/dataviz_cirrus.jpg',
-          'img/dataviz_algo.jpg'
-        ],
-        captions: [
-          'Specialized visualization mode',
-          'Cloud data integration',
-          'Algorithm visualization'
-        ],
-        descriptions: []
+          {
+            image: 'img/dataviz_special.jpg',
+            caption: 'Specialized visualizations',
+            description: 'Temperature-salinity plot, sediment triangle plot'
+          },
+          {
+            image: 'img/dataviz_cirrus.jpg',
+            caption: 'Cirrus.js dataviz library',
+            description: 'Created for PlanetOS to build custom dashboards'
+          },
+          {
+            image: 'img/dataviz_algo.jpg',
+            caption: 'Algorithm for visualization',
+            description: 'Histogram equalization for better color mapping'
+          }
+        ]
       }
     ]
   },
@@ -267,28 +317,39 @@ window.projects = [
     sections: [
       {
         type: 'single',
-        images: ['img/datahub_hero.jpg'],
-        caption: 'Main platform interface'
+        images: [{
+          image: 'img/datahub_hero.jpg',
+          caption: 'Datahub apps',
+          description: 'Datahub and Exchange'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/datahub_exchange1.jpg',
-          'img/datahub_exchange2.jpg',
-          'img/datahub_exchange3.jpg'
-        ],
-        captions: [
-          'Data exchange overview',
-          'Dataset management',
-          'API integration view'
-        ],
-        descriptions: []
+          {
+            image: 'img/datahub_exchange1.jpg',
+            caption: 'Exchange early prototype',
+            description: 'First version'
+          },
+          {
+            image: 'img/datahub_exchange2.jpg',
+            caption: 'Exchange early prototype',
+            description: 'Second version'
+          },
+          {
+            image: 'img/datahub_exchange3.jpg',
+            caption: 'Datahub prototype',
+            description: 'Datahub is Exchange\'s successor'
+          }
+        ]
       },
       {
         type: 'single',
-        images: ['img/datahub_big.jpg'],
-        caption: 'Full platform view',
-        descriptions: []
+        images: [{
+          image: 'img/datahub_big.jpg',
+          caption: 'Datahub platofmr',
+          description: 'Data information and API view'
+        }]
       }
     ]
   },
@@ -301,74 +362,86 @@ window.projects = [
     sections: [
       {
         type: 'single',
-        images: ['img/heavyds_big.jpg'],
-        caption: 'Chart editor panel',
-        description: 'Options by chart type'
+        images: [{
+          image: 'img/heavyds_big.jpg',
+          caption: 'Chart editor panel',
+          description: 'Options by chart type'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/heavyds_edit1.jpg',
-          'img/heavyds_edit2.jpg',
-          'img/heavyds_edit3.jpg'
-        ],
-        captions: [
-          'Map editor',
-          'Map editor',
-          'Map editor'
-        ],
-        descriptions: [
-          'Color palettes',
-          'Pointmap editor',
-          'Basemap theme'
+          {
+            image: 'img/heavyds_edit1.jpg',
+            caption: 'Map editor',
+            description: 'Color palettes'
+          },
+          {
+            image: 'img/heavyds_edit2.jpg',
+            caption: 'Map editor',
+            description: 'Pointmap editor'
+          },
+          {
+            image: 'img/heavyds_edit3.jpg',
+            caption: 'Map editor',
+            description: 'Basemap theme'
+          }
         ]
       },
       {
         type: 'single',
-        images: ['img/heavyds_components_big.jpg'],
-        caption: 'Complete component system',
-        description: 'Chart, forms, filters, layouts, etc.'
+        images: [{
+          image: 'img/heavyds_components_big.jpg',
+          caption: 'Complete component system',
+          description: 'Chart, forms, filters, layouts, etc.'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/heavyds_otherscreen1.jpg',
-          'img/heavyds_otherscreen2.jpg',
-          'img/heavyds_otherscreen3.jpg'
-        ],
-        captions: [
-          'Data library',
-          'SQL editor',
-          'Landing page'
-        ],
-        descriptions: [
-          'UX to connect to datasets',
-          'Dataset management',
-          'Dashboard list'
+          {
+            image: 'img/heavyds_otherscreen1.jpg',
+            caption: 'Data library',
+            description: 'UX to connect to datasets'
+          },
+          {
+            image: 'img/heavyds_otherscreen2.jpg',
+            caption: 'SQL editor',
+            description: 'Dataset management'
+          },
+          {
+            image: 'img/heavyds_otherscreen3.jpg',
+            caption: 'Landing page',
+            description: 'Dashboard list'
+          }
         ]
       },
       {
         type: 'single',
-        images: ['img/heavyds_iteration_big.jpg'],
-        caption: 'Editor iteration',
-        description: 'One of the audit cycle'
+        images: [{
+          image: 'img/heavyds_iteration_big.jpg',
+          caption: 'Editor iteration',
+          description: 'One of the audit cycle'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/heavyds_darkmode1.jpg',
-          'img/heavyds_darkmode2.jpg',
-          'img/heavyds_darkmode3.jpg'
-        ],
-        captions: [
-          'Light mode',
-          'Dark mode',
-          'At NVIDIA conference'
-        ],
-        descriptions: [
-          'Original theme',
-          'Dark mode theme',
-          'First version to show on giant display'
+          {
+            image: 'img/heavyds_darkmode1.jpg',
+            caption: 'Light mode',
+            description: 'Original theme'
+          },
+          {
+            image: 'img/heavyds_darkmode2.jpg',
+            caption: 'Dark mode',
+            description: 'Dark mode theme'
+          },
+          {
+            image: 'img/heavyds_darkmode3.jpg',
+            caption: 'At NVIDIA conference',
+            description: 'First version to show on giant display'
+          }
         ]
       }
     ]
@@ -382,52 +455,60 @@ window.projects = [
     sections: [
       {
         type: 'single',
-        images: ['img/datameer_big.jpg'],
-        caption: 'Chart designer',
-        description: 'Data selector to build charts'
+        images: [{
+          image: 'img/datameer_big.jpg',
+          caption: 'Chart designer',
+          description: 'Data selector to build charts'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/datameer_app.jpg',
-          'img/datameer_editor.jpg',
-          'img/datameer_ecosystem.jpg'
-        ],
-        captions: [
-          'Datameer app',
-          'Editor panels',
-          'Big data ecosystem visualization'
-        ],
-        descriptions: [
-          'Datameer business infographics',
-          'Freeform editor controls',
-          'Products working on Hadoop'
+          {
+            image: 'img/datameer_app.jpg',
+            caption: 'Datameer app',
+            description: 'Datameer business infographics'
+          },
+          {
+            image: 'img/datameer_editor.jpg',
+            caption: 'Editor panels',
+            description: 'Freeform editor controls'
+          },
+          {
+            image: 'img/datameer_ecosystem.jpg',
+            caption: 'Big data ecosystem visualization',
+            description: 'Products working on Hadoop'
+          }
         ]
       },
       {
         type: 'single',
-        images: ['img/datameer_designer_big.jpg'],
-        caption: 'Datameer Business Infographics Designer',
-        description: 'Freeform editor' 
+        images: [{
+          image: 'img/datameer_designer_big.jpg',
+          caption: 'Datameer Business Infographics Designer',
+          description: 'Freeform editor'
+        }]
       },
       {
         type: 'trio',
         images: [
-          'img/datameer_dashboard1.jpg',
-          'img/datameer_dashboard2.jpg',
-          'img/datameer_dashboard3.jpg'
-        ],
-        captions: [
-          'Twitter app',
-          'Twitter happiness',
-          'Click path analysis'
-        ],
-        descriptions: [
-          'Social network visualization',
-          'Sentiment analysis',
-          'Website monitoring'
+          {
+            image: 'img/datameer_dashboard1.jpg',
+            caption: 'Twitter app',
+            description: 'Social network visualization'
+          },
+          {
+            image: 'img/datameer_dashboard2.jpg',
+            caption: 'Twitter happiness',
+            description: 'Sentiment analysis'
+          },
+          {
+            image: 'img/datameer_dashboard3.jpg',
+            caption: 'Click path analysis',
+            description: 'Website monitoring'
+          }
         ]
-      },
+      }
     ]
   }
 ];

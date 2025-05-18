@@ -52,7 +52,9 @@
   <script id="single-image-template" type="x-tmpl-mustache">
     <div class="image-grid">
       <div class="image-container">
-        <img src="{{src}}" alt="{{alt}}" class="project-image">
+        <div class="image-wrapper">
+          <img src="{{src}}" alt="{{alt}}" class="project-image">
+        </div>
         <div class="image-caption">{{caption}}</div>
         <div class="image-description">{{description}}</div>
       </div>
@@ -63,7 +65,9 @@
     <div class="image-grid">
       {{#images}}
       <div class="image-container">
-        <img src="{{src}}" alt="{{alt}}" class="project-image">
+        <div class="image-wrapper">
+          <img src="{{src}}" alt="{{alt}}" class="project-image">
+        </div>
         <div class="image-caption">{{caption}}</div>
         <div class="image-description">{{description}}</div>
       </div>
@@ -110,18 +114,18 @@
       project.sections.forEach((section, sectionIndex) => {
         if (section.type === 'single') {
           sectionsContainer.innerHTML += Mustache.render(singleImageTemplate, {
-            src: section.images[0],
+            src: section.images[0].image,
             alt: `Project image ${sectionIndex + 1}`,
-            caption: section.caption,
-            description: section.description
+            caption: section.images[0].caption,
+            description: section.images[0].description
           });
         } else if (section.type === 'trio') {
           sectionsContainer.innerHTML += Mustache.render(trioImageTemplate, {
             images: section.images.map((image, index) => ({
-              src: image,
+              src: image.image,
               alt: `Project image ${sectionIndex + 1}-${index + 1}`,
-              caption: section.captions[index],
-              description: section.descriptions[index]
+              caption: image.caption,
+              description: image.description
             }))
           });
         }
