@@ -510,6 +510,107 @@ window.projects = [
         ]
       }
     ]
-  }
+  },
+  {
+    id: 'plante',
+    title: 'Plante growth',
+    description: 'Interactive animation of plant growth',
+    information: 'An interactive for teaching plant growth at the cellular level, in the stem, root and leaf. I was in charge of the graphical design. The programming was in Flash (it was around year 2000).',
+    thumbnail: 'img/plante_big.jpg',
+    sections: [
+      {
+        type: 'single',
+        images: [{
+          image: 'img/plante_big.jpg',
+          caption: 'Plant overview',
+          description: 'Main growth interactiveanimation'
+        }]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/plante_croquis1.jpg',
+            caption: 'Sketch 1',
+            description: 'Stem cross-section sketches'
+          },
+          {
+            image: 'img/plante_croquis2.jpg',
+            caption: 'Sketch 2',
+            description: 'Flower details sketches'
+          },
+          {
+            image: 'img/plante_croquis3.jpg',
+            caption: 'Sketch 3',
+            description: 'Legend design iteration'
+          }
+        ]
+      },
+      {
+        type: 'single',
+        images: [{
+          image: 'img/plante_croquis.jpg',
+          caption: 'Detailed storyboard',
+          description: 'Analysis of every cellilar groups'
+        }]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/plante_coupe1.jpg',
+            caption: 'Cross-section 1',
+            description: 'Cross-section animation start'
+          },
+          {
+            image: 'img/plante_coupe2.jpg',
+            caption: 'Cross-section 2',
+            description: 'Cross-section animation middle'
+          },
+          {
+            image: 'img/plante_coupe3.jpg',
+            caption: 'Cross-section 3',
+            description: 'Cross-section animation end'
+          }
+        ]
+      },
+      {
+        type: 'single',
+        images: [{
+          image: 'img/plante_coupe.jpg',
+          caption: 'Plant cross-section',
+          description: 'Detailed cross-section analysis'
+        }]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/plante_tige1.jpg',
+            caption: 'Stem selection',
+            description: 'Longitudinal and cross-section'
+          },
+          {
+            image: 'img/plante_tige2.jpg',
+            caption: 'Root selection',
+            description: 'Longitudinal and cross-section'
+          },
+          {
+            image: 'img/plante_tige3.jpg',
+            caption: 'Whole plant overview',
+            description: 'Cross-sections'
+          }
+        ]
+      },
+      {
+        type: 'single',
+        images: [{
+          image: 'img/plante_layout.jpg',
+          caption: 'Plant layout',
+          description: 'Layout design iteration'
+        }]
+      }
+    ]
+  },
 ];
 
