@@ -513,7 +513,7 @@ window.projects = [
   },
   {
     id: 'plante',
-    title: 'Plante growth',
+    title: 'Plant growth',
     description: 'Interactive animation of plant growth',
     information: 'An interactive for teaching plant growth at the cellular level, in the stem, root and leaf. I was in charge of the graphical design. The programming was in Flash (it was around year 2000).',
     thumbnail: 'img/plante_big.jpg',
@@ -523,7 +523,7 @@ window.projects = [
         images: [{
           image: 'img/plante_big.jpg',
           caption: 'Plant overview',
-          description: 'Main growth interactiveanimation'
+          description: 'Main growth interactive animation'
         }]
       },
       {
@@ -551,7 +551,7 @@ window.projects = [
         images: [{
           image: 'img/plante_croquis.jpg',
           caption: 'Detailed storyboard',
-          description: 'Analysis of every cellilar groups'
+          description: 'Analysis of every cellular groups'
         }]
       },
       {
@@ -610,6 +610,127 @@ window.projects = [
           description: 'Layout design iteration'
         }]
       }
+    ]
+  },
+  {
+    id: 'd3-project',
+    title: 'D3.js community',
+    description: 'Fun with the Datavis people',
+    information: 'I had the chance to contribute in my own way to the excellent D3.js community. D3 is a JavaScript library for creating data visualizations. I organized meetups in Quebec and Montreal, wrote books, tutorials, maintained a gallery, a news feed and participated in D3 events. I also made a lot of open source chart libraries for various clients.',
+    thumbnail: 'img/d3_big.jpg',
+    sections: [
+      {
+        type: 'single',
+        images: [{
+          image: 'img/d3_big.jpg',
+          caption: '"Degenerated graphics" exhibition',
+          description: 'An art exhibition visualizations breaking in spectacular ways'
+        }]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/d3_broke1.jpg',
+            caption: 'Broken chart 1',
+            description: 'My own failed projection'
+          },
+          {
+            image: 'img/d3_broke2.jpg',
+            caption: 'Broken chart 2',
+            description: 'Kai\'s graph nebula'
+          },
+          {
+            image: 'img/d3_broke3.jpg',
+            caption: 'Broken chart 3',
+            description: 'Micah\'s voronoi plant'
+          }
+        ]
+      },
+      {
+        type: 'single',
+        images: [{
+          image: 'img/d3_meetup_sf.jpg',
+          caption: 'Meetups in San Francisco',
+          description: 'After my PhD I moved to San Francisco and discovered this great community'
+        }]
+      },
+      {
+        type: 'single',
+        images: [{
+          image: 'img/d3_gallery.jpg',
+          caption: 'Datavis gallery',
+          description: 'Collecting examples, tutorials, libraries and more'
+        }]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/d3_gallery1.jpg',
+            caption: 'VisMontreal Meetup',
+            description: 'Discussing with Ian live from SF'
+          },
+          {
+            image: 'img/d3_gallery2.jpg',
+            caption: 'VisMontreal team',
+            description: 'The meetup started in 2014 and has 1,850 members'
+          },
+          {
+            image: 'img/d3_gallery3.jpg',
+            caption: 'VisMontreal meetup',
+            description: 'We organized 15 meetups through the years'
+          }
+        ]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/d3_gallery4.jpg',
+            caption: 'VisQuebec 1',
+            description: 'Presentation of a categorization of charts'
+          },
+          {
+            image: 'img/d3_gallery5.jpg',
+            caption: 'VisQuebec 2',
+            description: 'Presentation about hybrid charts'
+          },
+          {
+            image: 'img/d3_gallery6.jpg',
+            caption: 'VisQuebec 3',
+            description: 'Presentations about open data'
+          }
+        ]
+      },
+      {
+        type: 'single',
+        images: [{
+          image: 'img/d3_timeline.jpg',
+          caption: 'Timeline visualization',
+          description: 'Interactive history of D3.js for its 10th anniversary'
+        }]
+      },
+      {
+        type: 'trio',
+        images: [
+          {
+            image: 'img/d3_contribution1.jpg',
+            caption: 'D3.js book',
+            description: 'Building and testing reusable charts'
+          },
+          {
+            image: 'img/d3_contribution2.jpg',
+            caption: 'My first tutorial back in 2011',
+            description: 'How to make an SVG chart in Inkscape and augment it with D3.js'
+          },
+          {
+            image: 'img/d3_contribution3.jpg',
+            caption: 'My first example in 2011',
+            description: 'A Superellipse plugin'
+          }
+        ]
+      },
     ]
   },
 ];
